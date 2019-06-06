@@ -1,5 +1,6 @@
 // import express
 const express = require('express');
+const cors = require('cors');
 
 // create server
 const app = express();
@@ -7,6 +8,7 @@ const db = require('./data/db.js');
 
 // use bodyparser
 app.use(express.json());
+app.use(cors());
 
 // endpoints
 
